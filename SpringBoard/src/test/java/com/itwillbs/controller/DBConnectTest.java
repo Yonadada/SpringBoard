@@ -34,6 +34,7 @@ public class DBConnectTest {
 		logger.info("디비연결 테스트 실행");
 		logger.info("sqlSession : " + sqlSession);
 
+//		logger.info("디비연결 테스트 실행");
 //		logger.info("ds" + ds);
 //		try {
 //			logger.info("" + ds.getConnection());
