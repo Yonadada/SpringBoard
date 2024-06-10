@@ -1,5 +1,7 @@
 package com.itwillbs.service;
 
+import javax.inject.Inject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -11,8 +13,10 @@ import com.itwillbs.persistence.BoardDAO;
 public class BoardServiceImpl implements BoardService {
 
 	private static final Logger logger = LoggerFactory.getLogger(BoardServiceImpl.class);
+	
 
 	//DAO 객체를 주입 
+	@Inject
 	private BoardDAO bdao;
 	
 	@Override
