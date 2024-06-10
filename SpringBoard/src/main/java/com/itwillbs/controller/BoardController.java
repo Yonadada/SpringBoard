@@ -48,7 +48,7 @@ public class BoardController {
 		bservice.regist(vo);
 		
 		
-		//페이지 이동
+		//페이지 이동!!
 		
 		return"redirect:/board/list";
 	}
