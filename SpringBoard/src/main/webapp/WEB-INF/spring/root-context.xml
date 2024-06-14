@@ -51,11 +51,12 @@
 	<!-- SQLSesstionFactory - 디비연결, sql 처리, mybatis 설정을 제어   -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
-		<!-- <property name="configLocation" value="classpath:/mybatis-config.xml" /> -->
+		
+		<property name="configLocation" value="classpath:/mybatis-config.xml" />
 			
 		<property name="mapperLocations" value="classpath:/mappers/**/*Mapper.xml" /> 
 		
-	</bean>														<!-- ** => 모든 폴더를 의미 -->	
+	</bean>											<!-- ** => 모든 폴더를 의미 -->	
 	<!-- SQLSesstionFactory - 디비연결, sql 처리, mybatis 설정을 제어   -->
 	
 	
