@@ -44,29 +44,30 @@
 					
 		</table>
 					<!-- 모달창 -->
-			<div class="modal fade" id="myModal" style="display: none;">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">×</span>
-							</button>
-							<h4 class="modal-title">아이티윌 게시판</h4>
-						</div>
-						<div class="modal-body">
-							<p>One fine body…</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-			<!--  모달창 끝 -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+						<h4 class="modal-title">Default Modal</h4>
+					</div>
+					<div class="modal-body">
+						<p>One fine body…</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
-		</div>
-		</div>
-
+		<!--  모달창 끝 -->
+			</div>
+		
 
 	<!-- Jquery 사용 -->
 	<script>
@@ -81,7 +82,7 @@
 			
 			if(result == "createOk"){
 				//alert("글쓰기 완료! 리스트 페이지 이동");
-				${"#myModal"}.modal("show");
+				$("#myModal").modal("show");
 			}
 			
 			Swal.fire("아이티윌 테스트!");
